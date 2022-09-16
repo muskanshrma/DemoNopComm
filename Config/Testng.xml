@@ -4,4 +4,11 @@
     <listeners>
         <listener class-name="Reports.Listeners"/>
     </listeners>
+
+        <test name="Verify user can checkout item">
+            <parameter name="browserName" value="chrome"></parameter>
+            <classes>
+                <class name="Test.VerifyUserCanAddItemToCartAndCheckout"/>
+            </classes>
+        </test>
 </suite>
