@@ -11,4 +11,11 @@
                 <class name="Test.VerifyUserCanAddItemToCartAndCheckout"/>
             </classes>
         </test>
+
+    <test name="Verify user can compare items">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.VerifyUserCanCompareItems"/>
+        </classes>
+    </test>
 </suite>
