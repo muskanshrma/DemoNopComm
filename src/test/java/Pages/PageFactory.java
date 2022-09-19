@@ -7,6 +7,8 @@ public class PageFactory {
     private AddToCart addToCart;
     private ComparisonPage comparisonPage;
     private MyAccountsPage myAccount;
+    private WishlistPage wishlist;
+
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -28,5 +30,11 @@ public class PageFactory {
             myAccount = new MyAccountsPage(driver);
         }
         return myAccount;
+    }
+    public WishlistPage getWishlistPage() {
+        if (wishlist == null) {
+            wishlist = new WishlistPage(driver);
+        }
+        return wishlist;
     }
 }

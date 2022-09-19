@@ -25,4 +25,11 @@
             <class name="Test.VerifyUserEditAccountDetails"/>
         </classes>
     </test>
+
+    <test name="Verify user can checkout from wishlist">
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="Test.VerifyUserCanAddToCartFromWishlist"/>
+        </classes>
+    </test>
 </suite>
