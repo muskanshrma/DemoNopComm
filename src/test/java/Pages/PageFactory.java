@@ -6,6 +6,7 @@ public class PageFactory {
     WebDriver driver;
     private AddToCart addToCart;
     private ComparisonPage comparisonPage;
+    private MyAccountsPage myAccount;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -21,5 +22,11 @@ public class PageFactory {
             comparisonPage = new ComparisonPage(driver);
         }
         return comparisonPage;
+    }
+    public MyAccountsPage getMyAccountsPage() {
+        if (myAccount == null) {
+            myAccount = new MyAccountsPage(driver);
+        }
+        return myAccount;
     }
 }
